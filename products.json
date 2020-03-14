@@ -1,0 +1,34 @@
+{
+    "productItems": [
+        {
+            "name": "Garden Claws",
+            "price": "$5.69",
+            "availability": "Yes",
+            "image": "claw.jpg"
+        },
+        {
+            "name": "Lincoln Memorial Pillow",
+            "price": "$8.29",
+            "availability": "No",
+            "image": "lincolnmemorialpillow.jpg"
+        },
+        {
+            "name": "Pigeon Mask",
+            "price": "$3.99",
+            "availability": "Yes",
+            "image": "pigeon-mask.jpg"
+        },
+        {
+            "name": "Tennis Boxer Head",
+            "price": "$9.49",
+            "availability": "No",
+            "image": "tennis.jpg"
+        },
+        {
+            "name": "Turkey Hat",
+            "price": "$7.29",
+            "availability": "Yes",
+            "image": "turkey-hat.jpg"
+        }
+    ]
+}
