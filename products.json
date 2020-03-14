@@ -22,13 +22,13 @@
             "name": "Tennis Boxer Head",
             "price": "$9.49",
             "availability": "No",
-            "image": "tennis.jpg"
+            "image": "tennis.jpeg"
         },
         {
             "name": "Turkey Hat",
             "price": "$7.29",
             "availability": "Yes",
-            "image": "turkey-hat.jpg"
+            "image": "turkey-hat.jpeg"
         }
     ]
 }
