@@ -1,4 +1,4 @@
-let requestURL= "";
+let requestURL= "https://aanisar.github.io/weird/products.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -24,7 +24,7 @@ function productItems(jsonObj){
         let availability = document.createElement('p');
         let section = document.querySelector("section");
 
-        img.setAttribute( 'src',""+ productItems[a].image);
+        img.setAttribute( 'src',"https://aanisar.github.io/weird/Assets/"+ productItems[a].image);
         img.setAttribute( 'alt', productItems[a].image);
         name.textContent = productItems[a].name;
         price.textContent = "Price" + productItems[a].price;
