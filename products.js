@@ -15,7 +15,7 @@ function productItems(jsonObj){
 
     let productItems = jsonObj.productItems;
 
-    for(let a = 0; a < productItems.length; a++){
+    for(let a = 0; a <=  productItems.length; a++){
 
         let article = document.createElement("article");
         let name = document.createElement("h2");
@@ -27,8 +27,8 @@ function productItems(jsonObj){
         img.setAttribute( 'src',"https://aanisar.github.io/weird/Assets/"+ productItems[a].image);
         img.setAttribute( 'alt', productItems[a].image);
         name.textContent = productItems[a].name;
-        price.textContent = "Price" + productItems[a].price;
-        availability.textContent = "Availability" + productItems[a].availability;
+        price.textContent = "Price: " + productItems[a].price;
+        availability.textContent = "Availability: " + productItems[a].availability;
 
         article.appendChild(img);
         article.appendChild(name);
@@ -37,3 +37,14 @@ function productItems(jsonObj){
         section.appendChild(article);
     }
 }
+
+let section2 = document.createElement('section');
+let button = document.createElement('button');
+let body = document.querySelector('body');
+
+button.innerHTML('Click Me');
+
+body.appendChild(section2);
+section2.appendChild(button);
+
+
