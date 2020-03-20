@@ -44,7 +44,7 @@ let body = document.querySelector('body');
 
 button.innerHTML('Click Me');
 
-body.appendChild(section2);
+document.body.appendChild(section2);
 section2.appendChild(button);
 
 
