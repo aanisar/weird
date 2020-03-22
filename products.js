@@ -42,9 +42,9 @@ let section2 = document.createElement('section');
 let button = document.createElement('button');
 let body = document.querySelector('body');
 
-button.innerHTML('Click Me');
+button.innerHTML= 'Click Me';
 
-document.body.appendChild(section2);
+body.appendChild(section2);
 section2.appendChild(button);
 
 
