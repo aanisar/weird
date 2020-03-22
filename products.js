@@ -38,12 +38,12 @@ function productItems(jsonObj){
     }
 }
 
+var body = document.getElementsByTagName("body")[0];
 let section2 = document.createElement('section');
 let button = document.createElement('button');
-let body = document.querySelector('body');
+
 
 button.innerHTML= 'Click Me';
-
 body.appendChild(section2);
 section2.appendChild(button);
 
