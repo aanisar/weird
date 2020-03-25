@@ -1,15 +1,12 @@
-let requestURL= "https://aanisar.github.io/weird/products.json";
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-
-request.onload = function(){
-
-    let allProducts = request.response;
-    console.log(allProducts);
-    productItems(allProducts);
-};
+function loadContent(url, type, callback){
+    let xhr = new XMLHttpRequest(); 
+    xhr.open('GET', url);
+    xhr.responseType = type;
+    xhr.onload = function(){
+        callback(xhr.response);
+    };
+    xhr.send();
+}
 
 function productItems(jsonObj){
 
@@ -38,22 +35,5 @@ function productItems(jsonObj){
     }
 }
 
-var btn = document.createElement("button");   
-btn.innerHTML = "Click me";                 
-document.body.appendChild(btn);               
-
-btn.addEventListener(onclick,loadContent('https://aanisar.github.io/weird/',jsonObj,productItems));
-
-function loadContent(url, type, callback){
-    let xhr = new XMLHttpRequest(); 
-    xhr.open('GET', url);
-    xhr.responseType = type;
-    xhr.onload = function(){
-        callback(xhr.response);
-    };
-    xhr.send();
-}
-
-
-
+loadContent('https://aanisar.github.io/weird/products.json', 'json', productItems); 
 
