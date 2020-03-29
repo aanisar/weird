@@ -1,11 +1,24 @@
+
 function loadContent(url, type, callback){
+    // make promise
+    let loadContentPromise = new Promise((resolve,reject) =>{
     let xhr = new XMLHttpRequest(); 
     xhr.open('GET', url);
+    //if the we are directed to the right webpage, it will be resolve
+    if (url == "https://aanisar.github.io/weird/products.json"){
+        resolve("This is the right webpage");
+    }
+    // if the url is wrong, it will be reject
+    else{
+        reject("Oooops! It is not the right webpage.");
+    }
     xhr.responseType = type;
     xhr.onload = function(){
         callback(xhr.response);
-    };
+    }
     xhr.send();
+    });
+    return loadContentPromise;
 }
 
 function productItems(jsonObj){
