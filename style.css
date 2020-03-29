@@ -1,3 +1,22 @@
 body{
-    color:green;
+    background-color:green;
+    color:white;
+    
+}
+img{
+    width: 5in;
+    height: 5in;
+    min-width: 2in;
+    min-height: 2in;
+  
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    bottom: 0px;
 }
